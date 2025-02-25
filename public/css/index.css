@@ -57,7 +57,7 @@ html {
 	overflow-y: scroll;
 }
 body {
-	max-width: 40em;
+	max-width: 100%;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -126,6 +126,22 @@ header {
 	border-bottom: 1px dashed var(--color-gray-20);
 }
 
+#blagdash-name {
+	font-size: xx-large;
+	font-weight: bolder;
+	text-shadow: 1px -1px 1px #493407;
+	width: 100%;
+	text-align: center;
+	padding: 2em;
+}
+
+#header-image {
+	background-image: url("/img/office.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 600px;
+}
+
 .links-nextprev {
 	display: flex;
 	justify-content: space-between;
@@ -174,7 +190,7 @@ code {
 }
 
 /* Header */
-header {
+nav, header {
 	display: flex;
 	gap: 1em;
 	flex-wrap: wrap;
@@ -182,10 +198,16 @@ header {
 	align-items: center;
 	padding: 1em;
 }
+
 .home-link {
+	/*
 	flex-grow: 1;
-	font-size: 1em; /* 16px /16 */
+	font-size: 1em; /* 16px /16 *
 	font-weight: 700;
+	*/
+	display: block;
+	color: cornsilk !important;
+	font-size: 4em;
 }
 .home-link:link:not(:hover) {
 	text-decoration: none;
@@ -199,6 +221,7 @@ header {
 	margin: 0;
 	list-style: none;
 }
+
 .nav-item {
 	display: inline-block;
 }
