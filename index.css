@@ -1,0 +1,44 @@
+:root {
+    --color: #11182c; 
+    --color-gray-20: #e0e0e0;
+    --color-gray-50: #C0C0C0;
+    --color-gray-90: #333;
+    --background-color: rgb(55, 72, 117);
+    --text-color: var(--color-gray-90);
+}
+  
+body {
+    background-color: var(--background-color);
+    color: gray;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+    color: var(--color);
+	border-bottom: 1px solid var(--color-gray-50);
+	padding: 2rem;
+
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: clamp(1.15rem, 1vw + 0.5rem, 2.5rem);
+    font-style: normal;
+    font-weight: 400;
+}
+
+header {
+    background-image: url("office.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+	min-height: 500px;
+	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.6);	
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+	text-shadow: -2px 1px 4px var(--color-gray-90); /* , 0 0 2rem rgba(255, 255, 255, 0.8); */
+	width: 100%;
+	text-align: left;
+	padding: 2rem 3rem;
+	color: rgb(233, 212, 138);
+}
